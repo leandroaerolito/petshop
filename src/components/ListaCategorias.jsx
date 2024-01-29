@@ -3,9 +3,9 @@ import styled from "styled-components";
 export default function ListaCategorias({
   categorias,
   categoriaAtiva,
-  filtrar,
+  onFiltrar,
   filtroAtivo,
-  limparFiltro,
+  onLimparFiltro,
 }) {
   return (
     <StyledCategorias>
@@ -13,7 +13,7 @@ export default function ListaCategorias({
         return (
           <button
             className={categoria === categoriaAtiva ? "ativo" : ""}
-            onClick={filtrar}
+            onClick={onFiltrar}
             key={indice}
           >
             {categoria}
@@ -22,7 +22,7 @@ export default function ListaCategorias({
       })}
 
       {filtroAtivo && (
-        <button onClick={limparFiltro} className="limpar">
+        <button onClick={onLimparFiltro} className="limpar">
           Limpar filtro
         </button>
       )}
