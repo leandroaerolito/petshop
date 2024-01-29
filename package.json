@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "api": "json-server --host 10.20.46.20 db.json --port 2112"
+    "api": "json-server --host 10.20.46.39 db.json --port 2112"
   },
   "dependencies": {
     "next": "14.0.4",
