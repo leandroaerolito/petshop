@@ -7,12 +7,28 @@ import ListaCategorias from "@/components/ListaCategorias";
 
 export async function getStaticProps() {
   try {
-    const resposta = await fetch(`${serverApi}/posts`);
+    const resposta = await fetch(`${serverApi}/posts.json`);
     const dados = await resposta.json();
 
     if (!resposta.ok) {
       throw new Error(`Erro: ${resposta.status} - ${resposta.statusText}`);
     }
+
+    /* Colocando os dados dos objetos dentro de um array */
+    const arrayDePosts = Object.keys(dados).map((post) => {
+      return {
+        ...dados[post],
+        id: post,
+      };
+    });
+
+    /* 
+    1) Object.keys(dados): extrair as chaves/id de cada objeto para um array.
+
+    2) Map no array de chaves, em que retornamos um novo objeto.
+
+    3) Cada novo objeto (representado por post) é criado com os dados existentes
+    */
 
     const categorias = dados.map((post) => post.categoria);
     const categoriasUnicas = [...new Set(categorias)];
