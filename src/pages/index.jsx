@@ -28,14 +28,18 @@ export async function getStaticProps() {
     2) Map no array de chaves, em que retornamos um novo objeto.
 
     3) Cada novo objeto (representado por post) é criado com os dados existentes
+
+    4) No caso do id, atribuimos a própria chave de cada objeto. Portanto, ao invés de ids numéricos, os ids passam a ser na aplicação o próprio hash/código de cada post.
     */
 
-    const categorias = dados.map((post) => post.categoria);
+    console.log(arrayDePosts);
+
+    const categorias = arrayDePosts.map((post) => post.categoria);
     const categoriasUnicas = [...new Set(categorias)];
 
     return {
       props: {
-        posts: dados,
+        posts: arrayDePosts,
         categorias: categoriasUnicas,
       },
     };
