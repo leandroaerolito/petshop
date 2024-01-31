@@ -93,7 +93,7 @@ export default function Home({ posts, categorias }) {
         <meta name="keywords" content="PetShop, Banho, Ração, Gato, Cachorro" />
       </Head>
       <StyledHome>
-        <h2>Pet Notícias</h2>
+        <h2>Pet Notícias: {listaDePosts.length} </h2>
 
         <ListaCategorias
           categorias={categorias}
