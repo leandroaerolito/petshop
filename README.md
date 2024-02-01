@@ -8,7 +8,7 @@
 
 1. Arquivo de manifesto
    Arquivo chamado `manifest.json` com informações gerais sobre o aplicativo: nome, descrição, ícones, cores etc.
-   No caso do Next.js, este arquivo deve ser colocado na pasta `public` e adicionado via `meta tag` na página `_document.js`.
+   No caso do Next.js, este arquivo deve ser colocado na pasta `public` e adicionado via `link` na página `_document.js` dentro do `<head>`.
 
 2. Criar/configurar um Service Worker (JavaScript)
    `Service Worker` é um script que o navegador executa em segundo plano, de forma independente da interface ou de interações do usuário. Ele permite usar recursos que transformam a apliação em PWA, como instalação/desinstalação, cache offline, notificações etc. No caso do Next.js, o Service Worker será criado/configurado automaticamente com o auxílio da lib `next-pwa` e com ajustes no `next-config.js`.
