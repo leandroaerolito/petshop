@@ -1,0 +1,19 @@
+{
+  "short_name": "Petshop Leandro",
+  "name": "O melhor Petshop para o seu amigo fiel",
+  "description": "Exemplo de uma PWA criado com Next.js",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "start_url": "/",
+  "scope": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "any",
+  "lang": "pt-br"
+}
