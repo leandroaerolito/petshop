@@ -1,16 +1,20 @@
 # PetShop: projeto Next.js
 
-## Branch 19
+## Branch 21-transformando-o-app-next-em-pwa
+
+**PWA** significa **Progressive Web Application** (Aplicativo Web Progressivo). Trata-se de uma abordagem para desenvolvimento de aplicativos web que visa combinar características de sites e aplicativos móveis. As PWAs são construídas construídas com tecnologias web tradicionais (HTML5, CSS e Javascript) e oferecem uma experiência semelhante a de aplicativso nativos, podendo atés mesmo serem instaladas no dispositivo móvel.
+
+## Branch 19-migração-api-fake-para-firebase-json
 
 ### Firebase
+
+### Link: https://firebase.google.com/
 
 Firebase é uma plataforma de serviços web (Web Services) com uma série de funcionalidades da Back-End úteis para aplicações (web, apps, jogos).
 
 No caso do Petshop, ciramos um projeto Firebase e nele adicionamos um banco de dados chamado **Firebase Realtime Database** para utilização como API JSON.
 
 O Realtime Database é um bando de dados 'NoSQL', ou seja, um banco de dados **não-relacional**. Ele é baseado em documentos no formato JSON contendo objetos de dados.
-
-Link: https://firebase.google.com/
 
 ### Lembrete sobre uso de APIs
 
